@@ -1,0 +1,24 @@
+download ProjectSubmission.zip file
+unzip the file
+change directory to ProjectSubmission
+
+run command as required, the format is:
+
+python CSE6140.py -inst <instance> -alg <algorithm> -time <cutoff> -seed <rdseed>
+
+<instance> represents the instance to test, give relative directory+filename
+<algorithm> represents which algorithm to use, you can choose 'BnB','Approx','HC','SA', they repsent Branch and Bound algrithm, Approximation Algorithm, Hill Climbing and Simulated Annealing algorithms
+<cutoff> represents the time you want to use to run the instance
+<rdseed> represent the random seed to give
+
+For example,the following command means to use 10 second to run Branch and Bound Algorithm on small_1 dataset with random seed of 10 (of course, random seed is not used in BnB Algorithm)
+python CSE6140.py -inst ./DATA/DATASET/small_scale/small_1 -alg BnB -time 10 -seed 10
+
+
+To draw QRTD,SQD on large_1 dataset for simulated annealing, run "python SAPlotLarge1.py"
+To draw QRTD,SQD on large_3 dataset for simulated annealing, run "python SAPlotLarge3.py"
+To run Simulated Annealing 10 rounds to get average on all datasets,"run SA10rounds.py"
+To draw QRTD,SQD on large_1 dataset for hill climbing, run "python hc_plot1.py"
+To draw QRTD,SQD on large_3 dataset for hill climbing, run "python hc_plot3.py"
+To run Hill Climbing 10 rounds to get average on all datasets,"python boxplot.py"
+
